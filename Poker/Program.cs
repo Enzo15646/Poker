@@ -17,7 +17,7 @@ namespace Poker
         public static extern IntPtr GetStdHandle(uint nStdHandle);
         static uint STD_OUTPUT_HANDLE = 0xfffffff5;
         static IntPtr hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-        // Pour utiliser la fonction C 'getchar()' : sasie d'un caractère
+        // Pour utiliser la fonction C 'getchar()' : saisie d'un caractère
         [DllImport("msvcrt")]
         static extern int _getche();
 
@@ -98,7 +98,20 @@ namespace Poker
         // Pour afficher le Menu pricipale
         private static void afficheMenu()
         {
+            Console.Clear();
 
+            SetConsoleTextAttribute(hConsole, (int)couleur.ROUGE);
+            Console.WriteLine("╔════════════════════╗");
+            Console.WriteLine("║       POKER        ║");
+            Console.WriteLine("╠════════════════════╣");
+            Console.WriteLine("║ 1 Jouer            ║");
+            Console.WriteLine("║ 2 Score            ║");
+            Console.WriteLine("║ 3 Fin              ║");
+            Console.WriteLine("╚════════════════════╝");
+
+            SetConsoleTextAttribute(hConsole, (int)couleur.JAUNE);
+            Console.WriteLine("Votre choix :");
+            Console.ResetColor();
         }
 
         // Jouer au Poker
