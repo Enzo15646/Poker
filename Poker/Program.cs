@@ -98,7 +98,6 @@ namespace Poker
         // Pour afficher le Menu pricipale
         private static void afficheMenu()
         {
-            Console.Clear();
 
             SetConsoleTextAttribute(hConsole, (int)couleur.ROUGE);
             Console.WriteLine("╔════════════════════╗");
@@ -108,17 +107,14 @@ namespace Poker
             Console.WriteLine("║ 2 Score            ║");
             Console.WriteLine("║ 3 Fin              ║");
             Console.WriteLine("╚════════════════════╝");
-
-            SetConsoleTextAttribute(hConsole, (int)couleur.JAUNE);
-            Console.WriteLine("Votre choix :");
-            Console.ResetColor();
         }
 
         // Jouer au Poker
 		// Ici que vous appellez toutes les fonction permettant de joueur au poker
         private static void jouerAuPoker()
         {
-
+            Console.Clear();
+            Console.WriteLine("Page pour Jouer");
         }
 
         // Tirage d'un jeu de 5 cartes
@@ -186,7 +182,8 @@ namespace Poker
         // Affiche le Scores
         private static void voirScores()
         {
-           
+            Console.Clear();
+            Console.WriteLine("Voir le score");
         }
 
         // Affiche résultat
@@ -231,37 +228,51 @@ namespace Poker
             //---------------
             // BOUCLE DU JEU
             //---------------
-            char reponse;
-            while (true)
+            int choix = -1;
+            while (choix != 3)
             {
                 afficheMenu();
-                reponse = (char)_getche();
-                if (reponse != '1' && reponse != '2' && reponse != '3')
+                SetConsoleTextAttribute(hConsole, (int)couleur.JAUNE);
+                Console.WriteLine("Votre choix :");
+                Console.ResetColor();
+
+                string saisie = Console.ReadLine();
+
+
+                // Validation du choix
+                // Vérifie si la saisie de l'utilisateur est un entier valide correspondant à (1, 2 ou 3).
+                // Si la conversion échoue ou si l'entier est en dehors, alors la condition est fausse.
+                if (int.TryParse(saisie, out choix) && choix >= 1 && choix <= 3)
                 {
                     Console.Clear();
-                    afficheMenu();
+                    switch (choix)
+                    {
+                        case 1:
+                            jouerAuPoker();
+                            break;
+                        case 2:
+                            voirScores();
+                            break;
+                        case 3:
+                            Console.WriteLine("\nMerci d'avoir joué ! À bientôt.");
+                            Console.WriteLine("Appuyez sur une touche pour fermer...");
+                            Console.ReadKey();
+                            break;
+                    }
                 }
                 else
                 {
-                SetConsoleTextAttribute(hConsole, 015);
-                // Jouer au Poker
-                if (reponse == '1')
-                {
-                    int i = 0;
-                    jouerAuPoker();
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("\nChoix invalide. Veuillez entrer un nombre entre 1 et 3.");
+                    Console.ResetColor();
+                    Console.WriteLine("Appuyez sur une touche pour continuer...");
+                    Console.ReadKey();
                 }
-
-                if (reponse == '2')
-                    voirScores();
-
-                if (reponse == '3')
-                    break;
             }
-            }
-            Console.Clear();
         }
     }
 }
+
 
 
 
