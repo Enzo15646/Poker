@@ -98,6 +98,7 @@ namespace Poker
         // Pour afficher le Menu pricipale
         private static void afficheMenu()
         {
+            Console.Clear();
 
             SetConsoleTextAttribute(hConsole, (int)couleur.ROUGE);
             Console.WriteLine("╔════════════════════╗");
@@ -182,7 +183,6 @@ namespace Poker
         // Affiche le Scores
         private static void voirScores()
         {
-            Console.Clear();
             Console.WriteLine("Voir le score");
         }
 
@@ -249,11 +249,14 @@ namespace Poker
                     {
                         case 1:
                             jouerAuPoker();
+                            Console.ReadKey();
                             break;
                         case 2:
                             voirScores();
+                            Console.ReadKey();
                             break;
                         case 3:
+                            SetConsoleTextAttribute(hConsole, (int)couleur.VERT);
                             Console.WriteLine("\nMerci d'avoir joué ! À bientôt.");
                             Console.WriteLine("Appuyez sur une touche pour fermer...");
                             Console.ReadKey();
