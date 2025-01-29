@@ -115,7 +115,10 @@ namespace Poker
         private static void jouerAuPoker()
         {
             Console.Clear();
+            SetConsoleTextAttribute(hConsole, (int)couleur.VERT);
             Console.WriteLine("Page pour Jouer");
+
+
         }
 
         // Tirage d'un jeu de 5 cartes
@@ -183,6 +186,7 @@ namespace Poker
         // Affiche le Scores
         private static void voirScores()
         {
+            SetConsoleTextAttribute(hConsole, (int)couleur.VERT);
             Console.WriteLine("Voir le score");
         }
 
@@ -250,6 +254,7 @@ namespace Poker
                         case 1:
                             jouerAuPoker();
                             Console.ReadKey();
+
                             break;
                         case 2:
                             voirScores();
