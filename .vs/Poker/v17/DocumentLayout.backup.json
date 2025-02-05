@@ -5,6 +5,12 @@
     {
       "AbsoluteMoniker": "D:0:0:{C4800230-4A7A-4EA3-8D64-52DE6A25C387}|Poker\\Poker.csproj|c:\\users\\e.jarraud\\desktop\\ap 3 c# jeux\\poker\\poker\\poker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C4800230-4A7A-4EA3-8D64-52DE6A25C387}|Poker\\Poker.csproj|solutionrelative:poker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Poker||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4800230-4A7A-4EA3-8D64-52DE6A25C387}|Poker\\Poker.csproj|c:\\users\\e.jarraud\\desktop\\ap 3 c# jeux\\poker\\poker\\poker\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,11 +20,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Poker",
+              "DocumentMoniker": "C:\\Users\\e.jarraud\\Desktop\\Ap 3 c# Jeux\\Poker\\Poker\\Poker\\Poker.csproj",
+              "RelativeDocumentMoniker": "Poker\\Poker.csproj",
+              "ToolTip": "C:\\Users\\e.jarraud\\Desktop\\Ap 3 c# Jeux\\Poker\\Poker\\Poker\\Poker.csproj",
+              "RelativeToolTip": "Poker\\Poker.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-05T14:10:14.456Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -28,9 +46,9 @@
               "RelativeDocumentMoniker": "Poker\\Program.cs",
               "ToolTip": "C:\\Users\\e.jarraud\\Desktop\\Ap 3 c# Jeux\\Poker\\Poker\\Poker\\Program.cs",
               "RelativeToolTip": "Poker\\Program.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAswHEAAABMAAAAAAAAAA==",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAUwAwAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T12:35:06.928Z",
+              "WhenOpened": "2025-02-05T14:09:14.909Z",
               "EditorCaption": ""
             }
           ]

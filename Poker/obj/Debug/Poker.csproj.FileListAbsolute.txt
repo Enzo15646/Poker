@@ -5,7 +5,7 @@ C:\Users\Stoorms\Documents\SharpDevelop Projects\Poker\Poker\obj\Debug\Poker.exe
 C:\Users\Stoorms\Documents\SharpDevelop Projects\Poker\Poker\obj\Debug\Poker.pdb
 C:\Users\e.jarraud\Desktop\Ap 3 c# Jeux\Poker\Poker\Poker\obj\Debug\Poker.csproj.AssemblyReference.cache
 C:\Users\e.jarraud\Desktop\Ap 3 c# Jeux\Poker\Poker\Poker\obj\Debug\Poker.csproj.CoreCompileInputs.cache
-C:\Users\e.jarraud\Desktop\Ap 3 c# Jeux\Poker\Poker\Poker\obj\Debug\Poker.exe
 C:\Users\e.jarraud\Desktop\Ap 3 c# Jeux\Poker\Poker\Poker\obj\Debug\Poker.pdb
-C:\Users\e.jarraud\Desktop\Ap 3 c# Jeux\Poker\Poker\Poker\bin\Debug\Poker.exe
 C:\Users\e.jarraud\Desktop\Ap 3 c# Jeux\Poker\Poker\Poker\bin\Debug\Poker.pdb
+C:\Users\e.jarraud\Desktop\Ap 3 c# Jeux\Poker\Poker\Poker\bin\Debug\Poker.dll
+C:\Users\e.jarraud\Desktop\Ap 3 c# Jeux\Poker\Poker\Poker\obj\Debug\Poker.dll

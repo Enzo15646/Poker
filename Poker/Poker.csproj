@@ -33,6 +33,9 @@
   <PropertyGroup>
     <ApplicationIcon>Capture-d’écran-2024-12-03-120521.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core">

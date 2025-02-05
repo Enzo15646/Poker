@@ -2,6 +2,7 @@
 using System.IO;
 using System.Text;
 using System.Runtime.InteropServices;
+using System.Threading;
 
 namespace Poker
 {
@@ -254,7 +255,6 @@ namespace Poker
                         case 1:
                             jouerAuPoker();
                             Console.ReadKey();
-
                             break;
                         case 2:
                             voirScores();
@@ -265,6 +265,7 @@ namespace Poker
                             Console.WriteLine("\nMerci d'avoir joué ! À bientôt.");
                             Console.WriteLine("Appuyez sur une touche pour fermer...");
                             Console.ReadKey();
+                            Console.WriteLine("Le jeu se fermera dans un instant. Veuillez patienter :) ");
                             break;
                     }
                 }
